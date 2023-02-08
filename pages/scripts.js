@@ -2,7 +2,7 @@ console.log('navigator', navigator);
 console.log("loaded")
 
 if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+    navigator.serviceWorker.register('/service-worker.js', { scope: '/pages/index.html' })
     .then(function (registration) { 
         console.log('Register success',registration)
     })
